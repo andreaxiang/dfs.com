@@ -342,7 +342,7 @@ nav {
   font-size:16px;
   border-radius: 5px;
   box-shadow: 0 0 2px #999;
-  opacity: 0.8
+  opacity: 0.5;
 }
 
 .arrow:hover {
