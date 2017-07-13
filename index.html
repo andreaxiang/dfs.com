@@ -74,12 +74,11 @@
   <a href="#" class="logo lf">
     <img src="img/logo1.jpg" alt="LOGO"/>
   </a>
-
-  <div id="settle_up" class="rt">
+  <div id="settle_up">
     <i class="icon">&#xe60a;</i>
     我的购物车<b></b>
   </div>
-  <div id="search_box" class="rt">
+  <div id="search_box">
     <div class="search">
       <input id="txtSearch" class="text"/>
       <button>搜索</button>
@@ -129,7 +128,7 @@
     <li class="active"></li>
   </ul>
 </div>
-<!--运营广告-->
+<!--3个广告位-->
 <section class="promotion-ads">
   <ul class="clear">
     <li>
@@ -155,57 +154,92 @@
     </li>
     <li class="login-box">
       <img src="img/default_user_portrait.gif" data-src="img/default_user_portrait.gif" draggable="false">
+
       <h3>Hello，会员</h3>
+
       <p>登录发现更多精彩</p>
       <a href="#" class="btn-login" rel="nofollow">立即登录</a>
     </li>
   </ul>
 </section>
 <!--分类导航-->
-<section id="main">
-  <div class="main_wrap lf">
-    <div class="category clear">
-      <ul class="category-item clear">
-        <li class="category-lt">
-          <h1>轻松购</h1>
-          <p>同城买农产品，方便又实惠</p>
-          <a href="#" class="btn-shopping">开始选购</a>
-        </li>
-        <li class="category-rt">
-          <img src="img/cate1.jpg"/>
-        </li>
-      </ul>
-      <ul class="category-item">
-        <li class="category-lt">
-          <h1>名店街</h1>
-          <p>农产品大品牌，排排坐等你来挑</p>
-          <a href="#" class="btn-shopping">开始选购</a>
-        </li>
-        <li class="category-rt">
-          <img src="img/cate1.jpg"/>
-        </li>
-      </ul>
-      <ul class="category-item">
-        <li class="category-lt">
-          <h1>生鲜馆</h1>
-          <p>好产品很有料，好吃呱呱叫</p>
-          <a href="#" class="btn-shopping">开始选购</a>
-        </li>
-        <li class="category-rt">
-          <img src="img/cate1.jpg" data-src="img/cate1.jpg"/>
-        </li>
-      </ul>
-      <ul class="category-item">
-        <li class="category-lt">
-          <h1>丰收仓</h1>
-          <p>农产品原产地，从田间地头直供</p>
-          <a href="#" class="btn-shopping">开始选购</a>
-        </li>
-        <li class="category-rt">
-          <img src="img/cate1.jpg" data-src="img/cate1.jpg"/>
-        </li>
-      </ul>
+<div class="category_wrap clear">
+  <div class="category">
+    <ul class="category-item clear">
+      <li class="category-lt">
+        <h1>轻松购</h1>
+        <p>同城买农产品，方便又实惠</p>
+        <a href="#" class="btn-shopping">开始选购</a>
+      </li>
+      <li class="category-rt">
+        <img src="img/cate1.jpg"/>
+      </li>
+    </ul>
+    <ul class="category-item">
+      <li class="category-lt">
+        <h1>名店街</h1>
+        <p>农产品大品牌，排排坐等你来挑</p>
+        <a href="#" class="btn-shopping">开始选购</a>
+      </li>
+      <li class="category-rt">
+        <img src="img/cate1.jpg"/>
+      </li>
+    </ul>
+    <ul class="category-item">
+      <li class="category-lt">
+        <h1>生鲜馆</h1>
+
+        <p>好产品很有料，好吃呱呱叫</p>
+        <a href="#" class="btn-shopping">开始选购</a>
+      </li>
+      <li class="category-rt">
+        <img src="img/cate1.jpg" data-src="img/cate1.jpg"/>
+      </li>
+    </ul>
+    <ul class="category-item">
+      <li class="category-lt">
+        <h1>丰收仓</h1>
+
+        <p>农产品原产地，从田间地头直供</p>
+        <a href="#" class="btn-shopping">开始选购</a>
+      </li>
+      <li class="category-rt">
+        <img src="img/cate1.jpg" data-src="img/cate1.jpg"/>
+      </li>
+    </ul>
+  </div>
+  <!--右侧栏1-->
+  <div id="sidebar">
+    <div class="pay_phone">
+      <h3>话费充值</h3>
+      <form action="" class="charge-mobile">
+        <label>号码</label><input type="text" name="phone"/>
+        <label>金额</label>
+        <input type="button" value="30元"/>
+        <input type="button" value="50元"/>
+        <input type="button" value="100元"/>
+        <input type="button" value="200元"/>
+        <input class="charge-btn" type="submit" value="立即充值"/>
+      </form>
     </div>
+    <div class="news_box">
+      <h3>话费充值</h3>
+      <form action="" class="charge-mobile">
+        <label>号码</label><input type="text" name="phone"/>
+        <label>金额</label>
+        <input type="button" value="30元"/>
+        <input type="button" value="50元"/>
+        <input type="button" value="100元"/>
+        <input type="button" value="200元"/>
+        <input class="charge-btn" type="submit" value="立即充值"/>
+      </form>
+    </div>
+  </div>
+</div>
+<!--主体内容-->
+<section id="main">
+  <!--左侧主体内容-->
+  <div class="main_wrap lf">
     <!--精挑细选-->
     <div class="main_collection clear">
       <div class="title">
@@ -226,6 +260,7 @@
             <a href="#"><img src="img/fruits/2.jpg" data-src="img/fruits/2.jpg"/></a>
           </div>
           <p><a href="#">深海大虾200g 虾类 海鲜水产烧烤食材</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;16.80</em></span>
             <span class="original_price fr">原价<s>20.00</s></span>
@@ -244,6 +279,7 @@
             <a href="#"><img src="img/fruits/110.jpg" data-src="img/fruits/110.jpg"/></a>
           </div>
           <p><a href="#">裴顿庄园童子鸡1kg 新鲜冷冻鸡肉</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;16.80</em></span>
             <span class="original_price fr">原价<s>20.00</s></span>
@@ -262,6 +298,7 @@
             <a href="#"><img src="img/fruits/140.jpg" data-src="img/fruits/140.jpg"/></a>
           </div>
           <p><a href="#">章鱼足270g 深海八爪鱼足 海鲜冻品冷链配送</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;11.80</em></span>
             <span class="original_price fr">原价<s>20.00</s></span>
@@ -280,6 +317,7 @@
             <a href="#"><img src="img/fruits/19.jpg" data-src="img/fruits/19.jpg"/></a>
           </div>
           <p><a href="#">越南巴沙鱼柳280g 去皮进口水产 海鲜鱼肉</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;9.90</em></span>
             <span class="original_price fr">原价<s>12.80</s></span>
@@ -298,6 +336,7 @@
             <a href="#"><img src="img/fruits/100.jpg" data-src="img/fruits/100.jpg"/></a>
           </div>
           <p><a href="#">东海小黄鱼400g（10-12条） 鱼肉整鱼海鲜水产</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;9.90</em></span>
             <span class="original_price fr">原价<s>12.80</s></span>
@@ -316,6 +355,7 @@
             <a href="#"><img src="img/fruits/150.jpg" data-src="img/fruits/150.jpg"/></a>
           </div>
           <p><a href="#">阿拉斯加黄金鲽400g 整鱼进口海鲜水产</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;19.90</em></span>
             <span class="original_price fr">原价<s>21.30</s></span>
@@ -334,6 +374,7 @@
             <a href="#"><img src="img/fruits/11.jpg" data-src="img/fruits/11.jpg"/></a>
           </div>
           <p><a href="#">欧式三文鱼排250g 2片装原味冷冻海鲜</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;38.00</em></span>
             <span class="original_price fr">原价<s>41.00</s></span>
@@ -352,6 +393,7 @@
             <a href="#"><img src="img/fruits/120.jpg" data-src="img/fruits/120.jpg"/></a>
           </div>
           <p><a href="#">姐妹厨房急鲜封琵琶腿1000g 冷冻小鸡腿</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;22.00</em></span>
             <span class="original_price fr">原价<s>24.90</s></span>
@@ -380,13 +422,14 @@
       </div>
       <ul class="main_showcase">
         <li class="banner_middle">
-          <a href="#"><img src="img/adv-3.jpg" data-src="img/adv-3.jpg"/></a>
+          <a href="#"><img src="img/adv-3.jpg" data-src="img/adv-3.jpg" style="background-color: #fcc336"/></a>
         </li>
         <li>
           <div class="mainCol-ct">
             <a href="#"><img src="img/fruits/1.jpg" data-src="img/fruits/1.jpg"/></a>
           </div>
           <p><a href="#">新奇士美国夏橙12个 160g以上/个</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;58.00</em></span>
             <span class="original_price fr">原价<s>59.90</s></span>
@@ -405,6 +448,7 @@
             <a href="#"><img src="img/fruits/3.jpg" data-src="img/fruits/3.jpg"/></a>
           </div>
           <p><a href="#">佳沛新西兰阳光金奇异果4个 114~134g/个</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;33.00</em></span>
             <span class="original_price fr">原价<s>36.90</s></span>
@@ -423,6 +467,7 @@
             <a href="#"><img src="img/fruits/4.jpg" data-src="img/fruits/4.jpg"/></a>
           </div>
           <p><a href="#">美国红蛇果4个 约190g/个 新鲜苹果进口</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;19.90</em></span>
             <span class="original_price fr">原价<s>21.60</s></span>
@@ -441,6 +486,7 @@
             <a href="#"><img src="img/fruits/222.jpg" data-src="img/fruits/222.jpg"/></a>
           </div>
           <p><a href="#">四川安岳黄柠檬4个约75g/个 新鲜水果</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;8.80</em></span>
             <span class="original_price fr">原价<s>10.08</s></span>
@@ -459,6 +505,7 @@
             <a href="#"><img src="img/fruits/26.jpg" data-src="img/fruits/26.jpg"/></a>
           </div>
           <p><a href="#">山东大樱桃1磅454g果径约26-28mm 本地樱桃</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;19.90</em></span>
             <span class="original_price fr">原价<s>21.30</s></span>
@@ -477,6 +524,7 @@
             <a href="#"><img src="img/fruits/14.jpg" data-src="img/fruits/14.jpg"/></a>
           </div>
           <p><a href="#">陕西精品红富士1kg 80-85mm 苹果 水果</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;15.80</em></span>
             <span class="original_price fr">原价<s>16.80</s></span>
@@ -495,6 +543,7 @@
             <a href="#"><img src="img/fruits/333.jpg" data-src="img/fruits/333.jpg"/></a>
           </div>
           <p><a href="#">海南小台农芒果1kg 海南特产芒果 水果</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;14.80</em></span>
             <span class="original_price fr">原价<s>15.90</s></span>
@@ -513,6 +562,7 @@
             <a href="#"><img src="img/fruits/444.jpg" data-src="img/fruits/444.jpg"/></a>
           </div>
           <p><a href="#">越南红心火龙果1kg 大果约450g个 新鲜水果</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;19.90</em></span>
             <span class="original_price fr">原价<s>21.60</s></span>
@@ -548,6 +598,7 @@
             <a href="#"><img src="img/fruits/7.jpg" data-src="img/fruits/7.jpg"/></a>
           </div>
           <p><a href="#">新西兰去骨小牛腿肉块500g 进口新鲜牛肉</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;26.80</em></span>
             <span class="original_price fr">原价<s>32.90</s></span>
@@ -566,6 +617,7 @@
             <a href="#"><img src="img/fruits/13.jpg" data-src="img/fruits/13.jpg"/></a>
           </div>
           <p><a href="#">澳洲谷饲牛脊骨肉骨段700g 煲汤食材 牛骨</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;19.90</em></span>
             <span class="original_price fr">原价<s>22.90</s></span>
@@ -584,6 +636,7 @@
             <a href="#"><img src="img/fruits/15.jpg" data-src="img/fruits/15.jpg"/></a>
           </div>
           <p><a href="#">澳洲精选S级牛腩块500g 进口牛肉块</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;28.00</em></span>
             <span class="original_price fr">原价<s>32.00</s></span>
@@ -602,6 +655,7 @@
             <a href="#"><img src="img/fruits/12.jpg" data-src="img/fruits/12.jpg"/></a>
           </div>
           <p><a href="#">澳洲腱子心1kg牛腱 新鲜冷冻牛肉 品质生鲜</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;53.80</em></span>
             <span class="original_price fr">原价<s>62.00</s></span>
@@ -620,6 +674,7 @@
             <a href="#"><img src="img/fruits/24.jpg" data-src="img/fruits/24.jpg"/></a>
           </div>
           <p><a href="#">丹麦皇冠谷饲猪肋排400g 非小排猪肉 猪排</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;24.60</em></span>
             <span class="original_price fr">原价<s>28.00</s></span>
@@ -638,6 +693,7 @@
             <a href="#"><img src="img/fruits/28.jpg" data-src="img/fruits/28.jpg"/></a>
           </div>
           <p><a href="#">丹麦皇冠谷饲五花肉400g 带皮带骨正宗猪肉</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;28.60</em></span>
             <span class="original_price fr">原价<s>31.00</s></span>
@@ -656,6 +712,7 @@
             <a href="#"><img src="img/fruits/27.jpg" data-src="img/fruits/27.jpg"/></a>
           </div>
           <p><a href="#">澳洲草饲眼肉牛排150g 含酱料包调味 牛排</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;18.80</em></span>
             <span class="original_price fr">原价<s>21.00</s></span>
@@ -674,6 +731,7 @@
             <a href="#"><img src="img/fruits/23.jpg" data-src="img/fruits/23.jpg"/></a>
           </div>
           <p><a href="#">巴西公牛牛腩块500g 进口牛肉 新鲜牛腩</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;38.90</em></span>
             <span class="original_price fr">原价<s>41.00</s></span>
@@ -734,10 +792,167 @@
       </ul>
     </div>
   </div>
+  <!--右侧边栏：热销单品-->
+  <div class="hot_sales rt">
+    <h1>热销单品</h1>
+    <ul class="hot_showcase clear">
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/555.jpg" data-src="img/fruits/555.jpg"/></a>
+        </div>
+        <p><a href="#">广西百香果 4个装 营养又美味 新鲜百香果</a></p>
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;9.80</em></span>
+          <span class="original_price fr">原价<s>11.90</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              桃本桃旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/666.jpg" data-src="img/fruits/666.jpg"/></a>
+        </div>
+        <p><a href="#">海南树上熟木瓜1个 450g以上/个 新鲜热带水果</a></p>
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;10.80</em></span>
+          <span class="original_price fr">原价<s>13.80</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/130.jpg" data-src="img/fruits/130.jpg"/></a>
+        </div>
+        <p><a href="#">原膳嫩鸭（樱桃谷鸭）950g/只 山东特产</a></p>
+
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;13.80</em></span>
+          <span class="original_price fr">原价<s>16.90</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/29.jpg" data-src="img/fruits/29.jpg"/></a>
+        </div>
+        <p><a href="#">大西洋深海鳕鱼片350g/包 鳕鱼 海鲜火锅</a></p>
+
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;25.00</em></span>
+          <span class="original_price fr">原价<s>29.00</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/25.jpg" data-src="img/fruits/25.jpg"/></a>
+        </div>
+        <p><a href="#">东海带鱼段250g/包 海鲜火锅</a></p>
+
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;8.50</em></span>
+          <span class="original_price fr">原价<s>11.00</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/234.jpg" data-src="img/fruits/234.jpg"/></a>
+        </div>
+        <p><a href="#">营养谷物蛋540g(12枚) 农家自养鸡土鸡蛋 </a></p>
+
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;9.90</em></span>
+          <span class="original_price fr">原价<s>13.80</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/10.jpg" data-src="img/fruits/10.jpg"/></a>
+        </div>
+        <p><a href="#">冠生园蜂蜜900g/瓶 蜂蜜 蜂制品 冲饮 蜜蜂制品</a></p>
+
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;29.90</em></span>
+          <span class="original_price fr">原价<s>36.00</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+      <li>
+        <div class="mainCol-ct">
+          <a href="#"><img src="img/fruits/5.jpg" data-src="img/fruits/5.jpg"/></a>
+        </div>
+        <p><a href="#">南非葡萄柚6个 250g以上/个 西柚</a></p>
+
+        <div class="price_bar">
+          <span class="new_price fl">现价<em>&yen;29.90</em></span>
+          <span class="original_price fr">原价<s>21.00</s></span>
+        </div>
+        <div class="prod_cover">
+          <aside class="store_ti">
+            <a target="_blank" href="#" title="送渔郎旗舰店">
+              送渔郎旗舰店 &gt;
+            </a>
+          </aside>
+          <a href="#" class="buy_btn">立即购买</a>
+        </div>
+      </li>
+    </ul>
+  </div>
   <!--右侧边栏-->
-  <div id="sidebar">
+  <!--<div id="sidebar">
     <div class="pay_phone">
       <h3>话费充值</h3>
+
       <form action="" class="charge-mobile">
         <label>号码</label><input type="text" name="phone"/>
         <label>金额</label>
@@ -756,6 +971,7 @@
             <a href="#"><img src="img/fruits/555.jpg" data-src="img/fruits/555.jpg"/></a>
           </div>
           <p><a href="#">广西百香果 4个装 营养又美味 新鲜百香果</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;9.80</em></span>
             <span class="original_price fr">原价<s>11.90</s></span>
@@ -774,6 +990,7 @@
             <a href="#"><img src="img/fruits/666.jpg" data-src="img/fruits/666.jpg"/></a>
           </div>
           <p><a href="#">海南树上熟木瓜1个 450g以上/个 新鲜热带水果</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;10.80</em></span>
             <span class="original_price fr">原价<s>13.80</s></span>
@@ -792,6 +1009,7 @@
             <a href="#"><img src="img/fruits/130.jpg" data-src="img/fruits/130.jpg"/></a>
           </div>
           <p><a href="#">原膳嫩鸭（樱桃谷鸭）950g/只 山东特产</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;13.80</em></span>
             <span class="original_price fr">原价<s>16.90</s></span>
@@ -810,6 +1028,7 @@
             <a href="#"><img src="img/fruits/29.jpg" data-src="img/fruits/29.jpg"/></a>
           </div>
           <p><a href="#">大西洋深海鳕鱼片350g/包 鳕鱼 海鲜火锅</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;25.00</em></span>
             <span class="original_price fr">原价<s>29.00</s></span>
@@ -828,6 +1047,7 @@
             <a href="#"><img src="img/fruits/25.jpg" data-src="img/fruits/25.jpg"/></a>
           </div>
           <p><a href="#">东海带鱼段250g/包 海鲜火锅</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;8.50</em></span>
             <span class="original_price fr">原价<s>11.00</s></span>
@@ -846,6 +1066,7 @@
             <a href="#"><img src="img/fruits/234.jpg" data-src="img/fruits/234.jpg"/></a>
           </div>
           <p><a href="#">营养谷物蛋540g(12枚) 农家自养鸡土鸡蛋 </a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;9.90</em></span>
             <span class="original_price fr">原价<s>13.80</s></span>
@@ -864,6 +1085,7 @@
             <a href="#"><img src="img/fruits/10.jpg" data-src="img/fruits/10.jpg"/></a>
           </div>
           <p><a href="#">冠生园蜂蜜900g/瓶 蜂蜜 蜂制品 冲饮 蜜蜂制品</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;29.90</em></span>
             <span class="original_price fr">原价<s>36.00</s></span>
@@ -882,6 +1104,7 @@
             <a href="#"><img src="img/fruits/5.jpg" data-src="img/fruits/5.jpg"/></a>
           </div>
           <p><a href="#">南非葡萄柚6个 250g以上/个 西柚</a></p>
+
           <div class="price_bar">
             <span class="new_price fl">现价<em>&yen;29.90</em></span>
             <span class="original_price fr">原价<s>21.00</s></span>
@@ -897,8 +1120,160 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div>-->
 </section>
+<!--废弃：限时专区-->
+<!--<div class="index-goods">
+  <div class="goods-list special-list  ui-constructor clearfix special-ready cls-active" data-time="1499767200">
+    <div class="cate">
+      <h3>秒杀活动</h3>
+      <p class="sec-tit">先下单先到手</p>
+      <div class="ig-time">
+        <p class="cls-end cls-ready">距离开始还有</p>
+        <p class="cls-times">
+          <i class="cls-day">0<label>天</label></i>
+        </p>
+        <p class="cls-times">
+          <i class="cls-hour">01</i>
+          <span>:</span>
+          <i class="cls-mini">31</i>
+          <span>:</span>
+          <i class="cls-sec">09</i>
+        </p>
+      </div>
+      <a href="javascript:;" class="ig-rules">活动规则 <i class="rule-icon"></i></a>
+    </div>
+    <div class="goods-box">
+      <div class="con">
+        <a href="javascript:;" class="slide-btn gb-prev"></a>
+        <a href="javascript:;" class="slide-btn gb-next"></a>
+        <ul class="clearfix" id="special_swiper" style="width: 985px; left: 0px;">
+          <li class="">
+            <div class="pic">
+
+              <a href="https://www.dfs168.com/special/view.html?id=139" title="连云港立本 1.8%阿维菌素 乳油 100g*1瓶"
+                 target="_blank">
+                <figure>
+                  <img src="./大丰收农资商城-国内专业的第三方农资电商平台_files/ae7e61c3c5e7d1813005e428a327facc.jpg" alt=""
+                       data-src="https://wego-image.oss-cn-hangzhou.aliyuncs.com/store/goods/20170615/ae7e61c3c5e7d1813005e428a327facc.jpg?x-oss-process=image/resize,m_pad,h_201,w_235"
+                       style="transition: 1s; opacity: 1;"></figure>
+                <i class="icon-come-soon"></i>
+              </a>
+
+              <div class="cls-sotcks">还剩：
+                20 瓶
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                                <span class="new-price">现价<strong>
+                                  1.00 </strong></span>
+                                <span class="old-price fr">原价<s>
+                                  4.50 </s></span>
+              </p>
+
+              <p class="info-name"><strong class="cls-abbr">秒杀</strong>连云港立本 1.8%阿维菌素 乳油 100g*1瓶</p></div>
+            <a class="buy_btn" href="https://www.dfs168.com/special/view.html?id=139"
+               title="连云港立本 1.8%阿维菌素 乳油 100g*1瓶" target="_blank">
+              即将开售
+            </a>
+          </li>
+          <li class="">
+            <div class="pic">
+
+              <a href="https://www.dfs168.com/special/view.html?id=142" title="山西德威 绿之然 80%代森锰锌 可湿性粉剂 500g*1袋"
+                 target="_blank">
+                <figure>
+                  <img src="./大丰收农资商城-国内专业的第三方农资电商平台_files/f95360e4eb3960810674822559a4afcd.png" alt=""
+                       data-src="https://wego-image.oss-cn-hangzhou.aliyuncs.com/store/goods/20170407/f95360e4eb3960810674822559a4afcd.png?x-oss-process=image/resize,m_pad,h_201,w_235"
+                       style="transition: 1s; opacity: 1;"></figure>
+                <i class="icon-come-soon"></i>
+              </a>
+
+              <div class="cls-sotcks">还剩：
+                30 袋
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                                <span class="new-price">现价<strong>
+                                  1.00 </strong></span>
+                                <span class="old-price fr">原价<s>
+                                  22.00 </s></span>
+              </p>
+
+              <p class="info-name"><strong class="cls-abbr">秒杀</strong>山西德威 绿之然 80%代森锰锌 可湿性粉剂 500g*1袋</p></div>
+            <a class="buy_btn" href="https://www.dfs168.com/special/view.html?id=142"
+               title="山西德威 绿之然 80%代森锰锌 可湿性粉剂 500g*1袋" target="_blank">
+              即将开售
+            </a>
+          </li>
+          <li class="">
+            <div class="pic">
+
+              <a href="https://www.dfs168.com/special/view.html?id=140" title="【会员专供】克胜妙胜50%氯溴异氰尿酸 可溶性粉剂 200g*1袋"
+                 target="_blank">
+                <figure>
+                  <img src="./大丰收农资商城-国内专业的第三方农资电商平台_files/ff99c7a4924a5d39985fb6c53292d486.jpg" alt=""
+                       data-src="https://wego-image.oss-cn-hangzhou.aliyuncs.com/store/goods/20170621/ff99c7a4924a5d39985fb6c53292d486.jpg?x-oss-process=image/resize,m_pad,h_201,w_235"
+                       style="transition: 1s; opacity: 1;"></figure>
+                <i class="icon-come-soon"></i>
+              </a>
+
+              <div class="cls-sotcks">还剩：
+                40 袋
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                                <span class="new-price">现价<strong>
+                                  6.80 </strong></span>
+                                <span class="old-price fr">原价<s>
+                                  16.00 </s></span>
+              </p>
+
+              <p class="info-name"><strong class="cls-abbr">秒杀</strong>【会员专供】克胜妙胜50%氯溴异氰尿酸 可溶性粉剂 200g*1袋</p></div>
+            <a class="buy_btn" href="https://www.dfs168.com/special/view.html?id=140"
+               title="【会员专供】克胜妙胜50%氯溴异氰尿酸 可溶性粉剂 200g*1袋" target="_blank">
+              即将开售
+            </a>
+          </li>
+          <li class="">
+            <div class="pic">
+
+              <a href="https://www.dfs168.com/special/view.html?id=138" title="光禾生物 有机物料腐熟剂 有效活菌≥2亿／克 500g*1袋"
+                 target="_blank">
+                <figure>
+                  <img src="./大丰收农资商城-国内专业的第三方农资电商平台_files/4590ce105a9ff85306656add37966e38.png" alt=""
+                       data-src="https://wego-image.oss-cn-hangzhou.aliyuncs.com/store/goods/20170227/4590ce105a9ff85306656add37966e38.png?x-oss-process=image/resize,m_pad,h_201,w_235"
+                       style="transition: 1s; opacity: 1;"></figure>
+                <i class="icon-come-soon"></i>
+              </a>
+
+              <div class="cls-sotcks">还剩：
+                50 袋
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                                <span class="new-price">现价<strong>
+                                  16.80 </strong></span>
+                                <span class="old-price fr">原价<s>
+                                  47.00 </s></span>
+              </p>
+
+              <p class="info-name"><strong class="cls-abbr">秒杀</strong>光禾生物 有机物料腐熟剂 有效活菌≥2亿／克 500g*1袋</p></div>
+            <a class="buy_btn" href="https://www.dfs168.com/special/view.html?id=138"
+               title="光禾生物 有机物料腐熟剂 有效活菌≥2亿／克 500g*1袋" target="_blank">
+              即将开售
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>-->
+<!-- footer -->
 <section id="promote-slogan">
   <ul class="clear">
     <li>
