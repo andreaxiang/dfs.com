@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
 <head>
   <meta charset="UTF-8"/>
   <title>dialog demo</title>
-  <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
   <style>
 
     .dialog .dialog-overlay {
@@ -90,8 +89,13 @@
 <button id="open5"> button5</button>
 <button id="close">button</button>
 
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 
+
+  /*
+      Dialog.open()
+   */
 
 
   var Dialog = (function () {
@@ -147,7 +151,7 @@
       },
 
 
-      //Dialog
+      //鍒涘缓Dialog
       createDialog: function () {
         var tpl = '<div class="dialog" style="display:none">'
           + '<div class="dialog-overlay"></div>'
@@ -165,7 +169,7 @@
         $('body').append(this.$dialog);
       },
 
-      //
+      //鏍规嵁鍙傛暟璁剧疆 Dialog 鏍峰紡鍜屽唴瀹�
       setDialog: function () {
         var $dialog = this.$dialog;
         if (!this.opts.title) {
@@ -256,14 +260,12 @@
 
 
 </script>
-
-<div class="dialog" style="display: none;">
+<div class="dialog" style="display:none">
   <div class="dialog-overlay"></div>
   <div class="dialog-box">
-    <div class="dialog-header" style="display: none;"><h3></h3><span class="btn-close">x</span></div>
-    <div class="dialog-content">hello, 欢迎登录</div>
-    <div class="dialog-footer">
-      <a href="#" class="btn btn-close">close</a> <a href="#" class="btn btn-confirm" style="display: none;">login</a>
+    <div class="dialog-header"><h3></h3><span class="btn-close">x</span></div>
+    <div class="dialog-content"></div>
+    <div class="dialog-footer"><a href="#" class="btn btn-close">鍙栨秷</a> <a href="#" class="btn btn-confirm">纭畾</a>
     </div>
   </div>
 </div>

@@ -69,7 +69,7 @@ a:hover {
 #top {
   /*高度，行高，背景颜色，下边框*/
   width:100%;
-  min-height:38px;
+  height:38px;
   line-height:38px;
   background-color:#fafafa;
   border-bottom:1px solid #eee;
@@ -1343,7 +1343,7 @@ ul.category-item li.category-rt img {
 
 /*** 登录注册 ***/
 /*模态框*/
-.dialog .dialog-overlay {
+#dialog #dialog-overlay {
   width: 100%;
   height: 100%;
   background-color:rgba(0,0,0,0.45);
@@ -1353,23 +1353,23 @@ ul.category-item li.category-rt img {
   left:0;
   right:0;
   z-index: 3000;
-  /*display: none;*/
+  display: none;
 }
 
-.dialog .dialog-box {
+#dialog #dialog-box {
   position: absolute;
   z-index: 5000;
   left: 50%;
   top: 50%;
   margin-left:-251px;
-  margin-top:-100px;
+  margin-top:-150px;
   font-size: 14px;
   padding-bottom: 10px;
   width:500px;
   border:1px solid #fff;
   background:#fff;
   box-shadow: 0 0 1em hsla(0,0%,0%,0.25);
-  /*display: none;*/
+  display: none;
 }
 
 /** Tab切换 **/
@@ -1433,7 +1433,6 @@ ul.category-item li.category-rt img {
 }
 
 .content form> .row.actions {
-  /*margin-left: -37px;*/
   text-align: center;
 }
 
@@ -1471,54 +1470,3 @@ ul.category-item li.category-rt img {
   text-align: center;
   color: #fff;
 }
-
-
-
-/*.dialog .dialog-header {
-  padding: 10px 19px;
-  color: #fff;
-  background: #676666;
-}
-
-.dialog .dialog-header h3 {
-  margin: 0;
-  font-size: 14px;
-}
-
-.dialog .dialog-header .btn-close {
-  position: absolute;
-  right: 10px;
-  top: 8px;
-  font-family: fantasy;
-  cursor: pointer;
-}
-
-.dialog .dialog-content {
-  padding: 10px;
-  margin: 13px;
-  color: #666;
-  font-size: 11px;
-}
-
-.dialog .dialog-footer {
-  text-align: center;
-}
-
-.dialog a.btn {
-  position: relative;
-  text-align: center;
-  background-color: #e33100;
-  display: inline-block;
-  width: 50px;
-  padding: 5px 0 6px;
-  margin: 2px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 3px;
-}
-
-.dialog a.btn:hover {
-  background-color: #c33100;
-}*/
-
-

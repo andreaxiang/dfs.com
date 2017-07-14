@@ -24,8 +24,8 @@
     <!--top列表文字-->
     <ul class="rt">
       <li>
-        <a href="#" class="signIn">[登录]</a>
-        <a href="#" class="signUp">[免费注册]</a>
+        <a href="#" id="btnLogin">[登录]</a>
+        <a href="#" id="btnSignUp">[免费注册]</a>
       </li>
       <li>
         <b></b><!--分割线条-->
@@ -159,7 +159,7 @@
       <h3>Hello，会员</h3>
 
       <p>登录发现更多精彩</p>
-      <a href="#" class="btn-login signIn">立即登录</a>
+      <a href="#" class="btn-login" id="enterLogin">立即登录</a>
     </li>
   </ul>
 </section>
@@ -1375,15 +1375,16 @@
 </footer>
 
 <!--登录注册Tab-->
-<div class="dialog">
+<div id="dialog">
   <!--模态框-->
-  <div class="dialog-overlay"></div>
+  <div id="dialog-overlay"></div>
   <!--登录注册对话框-->
-  <div class="dialog-box">
+  <div id="dialog-box">
     <div class="wrap">
       <ul class="tabs clear">
         <li class="active">登录</li>
         <li>注册</li>
+        <li class="resetPwd" style="display: none">重置密码</li>
       </ul>
       <ul class="content clear">
         <li class="active">
@@ -1400,7 +1401,7 @@
               <button type="submit">登录</button>
             </div>
             <div class="row actions">
-              <a href="#">忘记密码？</a>
+              <a href="#" class="btn-forgotPwd">忘记密码?</a>
             </div>
           </form>
         </li>
@@ -1429,12 +1430,9 @@
             <div class="row actions">
               <button type="submit">注册</button>
             </div>
-            <div class="row actions">
-              <a href="#">返回登录</a>
-            </div>
           </form>
         </li>
-        <!--<li class="forgotPassword">
+        <li class="forgotPassword" style="display:none;">
           <h3>重置密码</h3>
           <form class="signUp">
             <div class="row">
@@ -1447,17 +1445,23 @@
             <div class="row">
               <a href="#">返回登录</a>
             </div>
-        </li>-->
+        </li>
       </ul>
     </div>
-
   </div>
 </div>
 
 <script src="data/js/jquery-1.11.3.js"></script>
+
+<script>
+
+</script>
+
+
 <script src="data/js/carousel.js"></script>
 <script src="data/js/prod_cover.js"></script>
 <script src="data/js/goTop.js"></script>
-<script src="data/js/userDialog.js"></script>
+<script src="data/js/login-tab.js"></script>
+<script src="data/js/login-modal.js"></script>
 </body>
 </html>
