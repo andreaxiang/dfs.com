@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    #headlineLayer {
+      position: absolute;
+      width: 219px;
+      height: 0px;
+      z-index: 37;
+      border: 1px none #000000;
+    }
+  </style>
+</head>
+<body>
+<div id="headlineLayer">
+  <table class='headline1' width='219' border='0' cellspacing='0' cellpadding='0' align='center' height='50'>
+    <tr>
+      <td>
+        <table width="219" height="1" valign="middle" border="0" cellpadding="0" cellspacing="0" align="right">
+          <tr>
+            <td width="101" class="dg12"></td>
+            <td width="52" class="dg12"></td>
+            <td colspan="2" width="66" height="1">
+              <!--
+              <div align="center">
+                <div class="s">1</div>
+                <div class="s"><a href="javascript:jumpHeadline(2)">2</a></div>
+                <div class="s"><a href="javascript:jumpHeadline(3)">3</a></div>
+              </div>
+-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <table width="366" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" valign="top">
+              <a href="#" target="_blank">
+                <img src="http://cdn.jirengu.com/book.jirengu.com/img/1.jpg" width="329" height="228" vspace="6"
+                     border="0"/>
+                <br>五一黄金周我们旅游再次出现高峰
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class='headline1' border='0' cellspacing='0' cellpadding='0' height='50' style='display:none' width="219">
+  <tr>
+    <td>
+      <table width="219" height="1" valign="middle" border="0" cellpadding="0" cellspacing="0" align="right">
+        <tr>
+          <td width="101" class="dg12"></td>
+          <td width="52" class="dg12"></td>
+          <td colspan="2" width="66" height="1">
+            <!--
+            <div align="center">
+              <div class="s">1</div>
+              <div class="s"><a href="javascript:jumpHeadline(2)">2</a></div>
+              <div class="s"><a href="javascript:jumpHeadline(3)">3</a></div>
+            </div>
+-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="/" target='_blank' class='ttzy'></a>
+      <table width="366" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" valign="top">
+            <a href="#" target="_blank">
+              <img src="http://cdn.jirengu.com/book.jirengu.com/img/2.jpg" width="329" height="228" vspace="6"
+                   border="0"/>
+              <br>人间仙镜，世外桃源
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class='headline2' width='219' border='0' cellspacing='0' cellpadding='0' height='50' style='display:none'>
+  <tr>
+    <td>
+      <table width="219" height="1" valign="middle" border="0" cellpadding="0" cellspacing="0" align="right">
+        <tr>
+          <td width="101" class="dg12"></td>
+          <td width="52" class="dg12"></td>
+          <td colspan="2" width="66" height="1">
+            <!--
+            <div align="center">
+              <div class="s"><a href="javascript:jumpHeadline(1)">1</a></div>
+              <div class="s">2</div>
+              <div class="s"><a href="javascript:jumpHeadline(3)">3</a></div>
+            </div>
+-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="/" target='_blank' class='ttzy'></a>
+      <table width="366" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" valign="top">
+            <a href="/jscss/" target="_blank">
+              <img src="http://cdn.jirengu.com/book.jirengu.com/img/3.jpg" width="329" height="228" vspace="6"
+                   border="0"/>
+              <br>黄金周成为摄影爱好者的天堂
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class='headline3' width='219' border='0' cellspacing='0' cellpadding='0' height='50' style='display:none'>
+  <tr>
+    <td>
+      <table width="219" height="1" valign="middle" border="0" cellpadding="0" cellspacing="0" align="right">
+        <tr>
+          <td width="101" class="dg12"></td>
+          <td width="52" class="dg12"></td>
+          <td colspan="2" width="66" height="1">
+            <!--
+            <div align="center">
+              <div class="s"><a href="javascript:jumpHeadline(1)">1</a></div>
+              <div class="s"><a href="javascript:jumpHeadline(2)">2</a></div>
+              <div class="s">3</div>
+            </div>
+-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href=/ target='_blank' class='ttzy'></a>
+      <table width="366" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" valign="top">
+            <a href=/ target="_blank">
+              <img src="http://cdn.jirengu.com/book.jirengu.com/img/4.jpg" width="329" height="228" vspace="6"
+                   border="0"/>
+              <br>我们应冷静看待黄金周过后的社会危机
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script language="javascript">
+  var currentIEBrowser = navigator.appName.indexOf("Microsoft") != -1;
+  var currentL = 1;
+  var first = true;
+  function switchContent() {
+
+    if (currentL >= 4) currentL = 1;
+    if (first) currentL++;
+    jumpHeadline(currentL++);
+
+  }
+  function jumpHeadline(c) {
+    first = false;
+    if (c < 1 || c >= 4) return;
+    if (currentIEBrowser) {
+      headlineLayer.filters[0].apply();
+      headlineLayer.innerHTML = "<TABLE width='219' border='0' cellspacing='0' cellpadding='0' align='center'>" + document.getElementById('headline' + c).innerHTML + "</TABLE>";
+      headlineLayer.filters[0].play();
+    } else {
+      document.getElementById('headlineLayer').innerHTML = "<TABLE width='219' border='0' cellspacing='0' cellpadding='0' align='center'>" + document.getElementById('headline' + c).innerHTML + "</TABLE>";
+    }
+  }
+  setInterval("switchContent()", 5000);
+</script>
+</body>
+</html>
