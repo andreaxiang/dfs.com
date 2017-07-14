@@ -1063,7 +1063,7 @@ ul.category-item li.category-rt img {
 .news_box li {
   height:26px;
   padding:5px;
-  margin:5px 0;
+  margin-top:5px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -1340,3 +1340,184 @@ ul.category-item li.category-rt img {
   color:#fff;
   background-color:rgba(0,0,0,0.35);
 }
+
+/*** 登录注册 ***/
+/*模态框*/
+.dialog .dialog-overlay {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.45);
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 3000;
+  /*display: none;*/
+}
+
+.dialog .dialog-box {
+  position: absolute;
+  z-index: 5000;
+  left: 50%;
+  top: 50%;
+  margin-left:-251px;
+  margin-top:-100px;
+  font-size: 14px;
+  padding-bottom: 10px;
+  width:500px;
+  border:1px solid #f7f7f7;
+  background:#fff;
+  box-shadow: 0 0 1em hsla(0,0%,0%,0.25);
+  /*display: none;*/
+}
+
+/** Tab切换 **/
+.tabs {
+  width:100%;
+  margin:0 auto;
+  font-size:16px;
+  border-bottom:1px solid #e0e0e0;
+}
+
+.tabs>li {
+  float:left;
+  text-align: center;
+  width:50%;
+  padding:10px 20px;
+  background: #fff;
+  border-bottom:1px solid #fff;
+  border-top:none;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.tabs>li.active {
+  border:1px solid #6ad971;
+  background: #6ad971;
+  color:#fff;
+}
+
+.content{
+  margin:20px;
+  padding:20px 10px;
+  text-align: center;
+}
+
+.content>li {
+  display:none;
+}
+
+.content>li.active {
+  display:block;
+}
+
+.content>li form>.row {
+  padding:10px 5px;
+}
+
+.content form>.row> label {
+  color:#333;
+  width:50px;
+  text-align: right;
+  margin-right:10px;
+}
+
+.content form> .row> input {
+  width: 60%;
+  padding: 10px;
+  outline: none;
+  border:1px solid #e0e0e0;
+  color:#666;
+  background: #fff;
+}
+
+.content form> .row.actions {
+  /*margin-left: -37px;*/
+  text-align: center;
+}
+
+.content form> .row.actions button {
+  padding: 10px 15px;
+  width:150px;
+  color: #fff;
+  font-size:16px;
+  border: 1px solid #6ad971;
+  background: #6ad971;
+  border-radius: 3px;
+}
+
+.content form>.row.actions button:hover {
+  background:#58bb60;
+  border:1px solid #58bb60;
+  color:#fff;
+  cursor: pointer;
+}
+
+.content form>.row.actions a {
+  font-size: 12px;
+  color:#666;
+  text-decoration: underline;
+  /*margin-left:20px;*/
+}
+
+.content form>.row.actions a:hover {
+  color:#6ad971;
+}
+
+.forgotPassword h3 {
+  margin-top: 1em;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/*.dialog .dialog-header {
+  padding: 10px 19px;
+  color: #fff;
+  background: #676666;
+}
+
+.dialog .dialog-header h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.dialog .dialog-header .btn-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-family: fantasy;
+  cursor: pointer;
+}
+
+.dialog .dialog-content {
+  padding: 10px;
+  margin: 13px;
+  color: #666;
+  font-size: 11px;
+}
+
+.dialog .dialog-footer {
+  text-align: center;
+}
+
+.dialog a.btn {
+  position: relative;
+  text-align: center;
+  background-color: #e33100;
+  display: inline-block;
+  width: 50px;
+  padding: 5px 0 6px;
+  margin: 2px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.dialog a.btn:hover {
+  background-color: #c33100;
+}*/
+
+

@@ -24,8 +24,8 @@
     <!--top列表文字-->
     <ul class="rt">
       <li>
-        <a href="#">[登录]</a>
-        <a href="#">[免费注册]</a>
+        <a href="#" class="signIn">[登录]</a>
+        <a href="#" class="signUp">[免费注册]</a>
       </li>
       <li>
         <b></b><!--分割线条-->
@@ -74,6 +74,7 @@
   <a href="#" class="logo lf">
     <img src="img/logo1.jpg" alt="LOGO"/>
   </a>
+
   <div id="settle_up">
     <i class="icon">&#xe60a;</i>
     我的购物车<b></b>
@@ -158,7 +159,7 @@
       <h3>Hello，会员</h3>
 
       <p>登录发现更多精彩</p>
-      <a href="#" class="btn-login" rel="nofollow">立即登录</a>
+      <a href="#" class="btn-login signIn">立即登录</a>
     </li>
   </ul>
 </section>
@@ -168,6 +169,7 @@
     <ul class="category-item clear">
       <li class="category-lt">
         <h1>轻松购</h1>
+
         <p>同城买农产品，方便又实惠</p>
         <a href="#" class="btn-shopping">开始选购</a>
       </li>
@@ -178,6 +180,7 @@
     <ul class="category-item">
       <li class="category-lt">
         <h1>名店街</h1>
+
         <p>农产品大品牌，排排坐等你来挑</p>
         <a href="#" class="btn-shopping">开始选购</a>
       </li>
@@ -212,6 +215,7 @@
   <div id="sidebar">
     <div class="pay_phone">
       <h3>话费充值</h3>
+
       <form action="" class="charge-mobile">
         <label>号码</label><input type="text" name="phone"/>
         <label>金额</label>
@@ -802,6 +806,7 @@
           <a href="#"><img src="img/fruits/555.jpg" data-src="img/fruits/555.jpg"/></a>
         </div>
         <p><a href="#">广西百香果 4个装 营养又美味 新鲜百香果</a></p>
+
         <div class="price_bar">
           <span class="new_price fl">现价<em>&yen;9.80</em></span>
           <span class="original_price fr">原价<s>11.90</s></span>
@@ -820,6 +825,7 @@
           <a href="#"><img src="img/fruits/666.jpg" data-src="img/fruits/666.jpg"/></a>
         </div>
         <p><a href="#">海南树上熟木瓜1个 450g以上/个 新鲜热带水果</a></p>
+
         <div class="price_bar">
           <span class="new_price fl">现价<em>&yen;10.80</em></span>
           <span class="original_price fr">原价<s>13.80</s></span>
@@ -1368,10 +1374,86 @@
   </div>
 </footer>
 
+<!--登录注册Tab-->
+<div class="dialog">
+  <!--模态框-->
+  <div class="dialog-overlay"></div>
+  <!--登录注册对话框-->
+  <div class="dialog-box">
+    <div class="wrap">
+      <ul class="tabs clear">
+        <li class="active">登录</li>
+        <li>注册</li>
+      </ul>
+      <ul class="content clear">
+        <li class="active">
+          <form class="signIn">
+            <div class="row">
+              <label>用户名</label>
+              <input type="text" placeholder="用户名不少于6位"/>
+            </div>
+            <div class="row">
+              <label>密&nbsp;&nbsp;&nbsp;码</label>
+              <input type="password" placeholder="密码6～12位"/>
+            </div>
+            <div class="row actions">
+              <button type="submit">登录</button>
+            </div>
+            <div class="row actions">
+              <a href="#">忘记密码？</a>
+            </div>
+          </form>
+        </li>
+        <li>
+          <form class="signUp">
+            <div class="row">
+              <label>用户名</label>
+              <input type="text" value="uname"/>
+            </div>
+            <div class="row">
+              <label>邮箱</label>
+              <input type="text" value="uname"/>
+            </div>
+            <div class="row">
+              <label>手机</label>
+              <input type="text" value="uname"/>
+            </div>
+            <div class="row">
+              <label>密码</label>
+              <input type="password" value="password"/>
+            </div>
+            <div class="row actions">
+              <button type="submit">注册</button>
+            </div>
+            <div class="row">
+              <a href="#">返回登录</a>
+            </div>
+          </form>
+        </li>
+        <!--<li class="forgotPassword">
+          <h3>重置密码</h3>
+          <form class="signUp">
+            <div class="row">
+              <label>邮箱</label>
+              <input type="text" value="uname"/>
+            </div>
+            <div class="row actions">
+              <button type="submit">发送重置密码邮件</button>
+            </div>
+            <div class="row">
+              <a href="#">返回登录</a>
+            </div>
+        </li>-->
+      </ul>
+    </div>
+
+  </div>
+</div>
+
 <script src="data/js/jquery-1.11.3.js"></script>
-<script src="data/js/newsCarousel.js"></script>
 <script src="data/js/carousel.js"></script>
 <script src="data/js/prod_cover.js"></script>
 <script src="data/js/goTop.js"></script>
+<script src="data/js/userDialog.js"></script>
 </body>
 </html>
