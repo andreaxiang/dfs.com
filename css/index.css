@@ -1366,7 +1366,7 @@ ul.category-item li.category-rt img {
   font-size: 14px;
   padding-bottom: 10px;
   width:500px;
-  border:1px solid #f7f7f7;
+  border:1px solid #fff;
   background:#fff;
   box-shadow: 0 0 1em hsla(0,0%,0%,0.25);
   /*display: none;*/
@@ -1442,6 +1442,7 @@ ul.category-item li.category-rt img {
   width:150px;
   color: #fff;
   font-size:16px;
+  outline: none;
   border: 1px solid #6ad971;
   background: #6ad971;
   border-radius: 3px;
