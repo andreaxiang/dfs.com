@@ -69,6 +69,7 @@
     </ul>
   </div>
 </header>
+
 <!--LOGO和搜索框! -->
 <div id="top_main" class="clear">
   <a href="#" class="logo lf">
@@ -90,6 +91,7 @@
     </div>
   </div>
 </div>
+
 <!--主导航 -->
 <nav id="nav" class="clear">
   <ul id="nav_items">
@@ -1387,17 +1389,17 @@
       </ul>
       <ul class="content clear">
         <li class="active">
-          <form class="signIn">
+          <form class="signIn" id="logIn-form">
             <div class="row">
               <label>用户名</label>
-              <input type="text" placeholder="用户名不少于6位"/>
+              <input type="text" placeholder="用户名不少于6位" name="uname"/>
             </div>
             <div class="row">
               <label>密&nbsp;&nbsp;&nbsp;码</label>
-              <input type="password" placeholder="密码为6～12位字母数字"/>
+              <input type="password" placeholder="密码为6～12位字母数字" name="upwd"/>
             </div>
             <div class="row actions">
-              <button type="submit">登录</button>
+              <button type="submit" id="bt-login">登录</button>
             </div>
             <div class="row actions">
               <a href="#" class="btn-forgotPwd">忘记密码?</a>
@@ -1405,29 +1407,29 @@
           </form>
         </li>
         <li>
-          <form class="signUp">
+          <form class="signUp" id="signUp-form">
             <div class="row">
               <label>用户名</label>
-              <input type="text" placeholder="用户名不少于6位"/>
+              <input type="text" placeholder="用户名不少于6位" name="uname"/>
             </div>
             <div class="row">
               <label>邮&nbsp;&nbsp;&nbsp;箱</label>
-              <input type="text" placeholder="邮箱格式为xxx@xxx.xxx"/>
+              <input type="text" placeholder="邮箱格式为xxx@xxx.xxx" name="umail"/>
             </div>
             <div class="row">
               <label>手&nbsp;&nbsp;&nbsp;机</label>
-              <input type="text" placeholder="请输入11位数手机号码"/>
+              <input type="text" placeholder="请输入11位数手机号码" name="uphone"/>
             </div>
             <div class="row">
               <label>验证码</label>
-              <input type="password" placeholder="验证码请查收手机短信"/>
+              <input type="password" placeholder="验证码请查收手机短信" name="verifyCode"/>
             </div>
             <div class="row">
               <label>密&nbsp;&nbsp;&nbsp;码</label>
-              <input type="password" placeholder="密码为6～12位字母数字"/>
+              <input type="password" placeholder="密码为6～12位字母数字" name="upwd"/>
             </div>
             <div class="row actions">
-              <button type="submit">注册</button>
+              <button type="submit" id="bt-signup">注册</button>
             </div>
           </form>
         </li>
