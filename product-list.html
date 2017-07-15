@@ -265,17 +265,17 @@
       </ul>
       <ul class="content clear">
         <li class="active">
-          <form class="signIn" id="logIn-form">
+          <form id="logIn-form">
             <div class="row">
-              <label>用户名</label>
-              <input type="text" placeholder="用户名不少于6位" name="uname"/>
+              <label for="uname">用户名</label>
+              <input type="text" placeholder="用户名不少于6位" name="uname" id="uname"/>
             </div>
             <div class="row">
-              <label>密&nbsp;&nbsp;&nbsp;码</label>
-              <input type="password" placeholder="密码为6～12位字母数字" name="upwd"/>
+              <label for="upwd">密&nbsp;&nbsp;&nbsp;码</label>
+              <input type="password" placeholder="密码为6～12位字母数字" name="upwd" id="upwd"/>
             </div>
             <div class="row actions">
-              <button type="submit" id="bt-login">登录</button>
+              <button type="submit" id="btSubmit">登录</button>
             </div>
             <div class="row actions">
               <a href="#" class="btn-forgotPwd">忘记密码?</a>
@@ -283,7 +283,7 @@
           </form>
         </li>
         <li>
-          <form class="signUp" id="signUp-form">
+          <form id="signUp-form">
             <div class="row">
               <label>用户名</label>
               <input type="text" placeholder="用户名不少于6位" name="uname"/>
@@ -337,6 +337,5 @@
 <script src="js/goTop.js"></script>
 <script src="js/login-tab.js"></script>
 <script src="js/login-modal.js"></script>
-<script src="js/login.js"></script>
 </body>
 </html>

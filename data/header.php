@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: text/html;charset=UTF-8');
 ?>
+
 <!-- 网站头部 top_box:width:1211px -->
 <header id="top">
   <div id="top_box">
@@ -14,8 +15,8 @@ header('Content-Type: text/html;charset=UTF-8');
     <!--top列表文字-->
     <ul class="rt">
       <li id="welcome">您好，欢迎光临
-        <a href="#" id="btnLogin">[登录]</a>
-        <a href="#" id="btnSignUp">[免费注册]</a>
+        <a href="#" id="btLogin">[登录]</a>
+        <a href="#" id="btSignUp">[免费注册]</a>
       </li>
       <li>
         <b></b><!--分割线条-->
@@ -83,13 +84,14 @@ header('Content-Type: text/html;charset=UTF-8');
 <!--主导航 -->
 <nav id="nav" class="clear">
   <ul id="nav_items">
-    <li class="active"><a href="#">首页</a></li>
+    <li><a href="index.html">首页</a></li>
     <li><a href="#">同城购</a></li>
     <li><a href="#">原产地</a></li>
     <li><a href="#">品牌街</a></li>
-    <li><a href="#">生鲜超市</a></li>
+    <li class="active"><a href="#">生鲜超市</a></li>
     <li><a href="#">兑换中心</a></li>
     <li><a href="#">农技论坛</a></li>
   </ul>
   <span>客服热线：400-9677-168</span>
 </nav>
+

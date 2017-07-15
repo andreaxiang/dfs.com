@@ -14,7 +14,7 @@ $('#bt-login').click(function(){
       if(data.code<0){  //登录失败
         $('p.alert').html(data.msg);
       }else {           //登录成功
-        $('.dialog').hide();
+        $('#dialog').hide();
         $('#welcome').html('欢迎您：'+data.uname);
         loginUname = data.uname; //在全局范围保存登录用户名
         loginUid = data.uid;//在全局范围保存登录用户编号

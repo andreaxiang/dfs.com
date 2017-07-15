@@ -3,4 +3,3 @@ $(function(){
   $('#site_header').load('data/header.php');
   $('#site_footer').load('data/footer.php');
 })
-

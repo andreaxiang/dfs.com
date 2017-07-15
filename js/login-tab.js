@@ -29,23 +29,3 @@ Tab.prototype.bind = function () {
 };
 
 var tab1 = new Tab(document.querySelectorAll(".wrap")[0]);
-
-
-/*
-var btn = $(".signIn");
-var modal = $(".dialog-overlay");
-var dialog = $(".dialog-box");
-var close = $(".btn-close");
-
-btn.addEventListener("click",function(){
-  modal.style.display = "block";
-  dialog.style.display = "block";
-});
-close.addEventListener("click",function(){
-  modal.style.display = "none";
-  dialog.style.display = "none";
-});
-modal.addEventListener("click",function(){
-  modal.style.display = "none";
-  dialog.style.display = "none";
-});*/

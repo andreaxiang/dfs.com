@@ -1,19 +1,22 @@
-var modal = document.querySelector("#dialog-overlay");
-var dialog = document.querySelector("#dialog-box");
-var btnLogin = document.querySelector("#btnLogin");
-var enterLogin = document.querySelector("#enterLogin");
-var btnSignUp = document.querySelector("#btnSignUp");
+let modal = document.querySelector("#dialog-overlay"),
+    dialog = document.querySelector("#dialog-box"),
+    btLogin = document.querySelector("#btLogin"),
+    enterLogin = document.querySelector("#enterLogin"),
+    btSubmit = document.querySelector("#btSubmit"),
+    btSignUp = document.querySelector("#btSignUp");
 
-btnLogin.onclick = function(e){
+//点击“登录”按钮，显示出“登录模态框”
+btLogin.onclick = function(e){
   e.preventDefault()
   modal.style.display = "block";
   dialog.style.display = "block";
 };
+
 enterLogin.onclick = function(){
   modal.style.display = "block";
   dialog.style.display = "block";
 };
-btnSignUp.onclick = function(){
+btSignUp.onclick = function(){
   modal.style.display = "block";
   dialog.style.display = "block";
 };
@@ -23,6 +26,55 @@ modal.onclick = function(e){
   modal.style.display = "none";
   dialog.style.display = "none";
 };
+
+/**功能点2：为“提交登录”按钮绑定事件监听**/
+let loginUname = null;  //全局变量，当前登录的用户名
+let loginUid = null;    //全局变量，当前登录的用户编号
+//点击“提交”按钮，发起异步AJAX请求，验证登录信息
+btSubmit.onclick = function(){
+  let n = uname.value;
+  let p = upwd.value;
+
+  /**提交异步请求消息**/
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function(){
+    if(xhr.readyState===4){
+      if(xhr.status===200){ //响应完成且成功
+        doResponse(xhr);
+      }else {
+        alert('响应完成但有问题');
+      }
+    }
+  }
+  xhr.open('GET','user-login.php?uname='+n+'&upwd='+p, true);
+  xhr.send(null);
+
+  function doResponse(xhr){
+    console.log('开始处理响应消息');
+    if(xhr.responseText==='login-err'){
+      loginMsg.style.color = 'red';
+      loginMsg.innerHTML = '用户名或密码有错误';
+    }else if(xhr.responseText==='login-succ'){
+      modal.style.display = 'none';
+      dialog.style.display = "none";
+      $('#welcome').html('欢迎您：'+ data.uname);
+      loginUname = data.uname; //在全局范围保存登录用户名
+      loginUid = data.uid;//在全局范围保存登录用户编号
+    }else {
+      alert('响应消息有问题！请检查Network!');
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /*<script language="javascript">
     // 登录 / 注册 切换
