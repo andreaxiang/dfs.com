@@ -13,7 +13,7 @@ header('Content-Type: text/html;charset=UTF-8');
     </ul>
     <!--top列表文字-->
     <ul class="rt">
-      <li>
+      <li id="welcome">您好，欢迎光临
         <a href="#" id="btnLogin">[登录]</a>
         <a href="#" id="btnSignUp">[免费注册]</a>
       </li>
