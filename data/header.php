@@ -84,10 +84,10 @@ header('Content-Type: text/html;charset=UTF-8');
 <!--主导航 -->
 <nav id="nav" class="clear">
   <ul id="nav_items">
-    <li class="active"><a href="index.html">首页</a></li>
+    <li><a href="index.html">首页</a></li>
     <li><a href="#">原产地</a></li>
     <li><a href="#">品牌街</a></li>
-    <li><a href="product-list.html">生鲜超市</a></li>
+    <li class="active"><a href="product-list.html">生鲜超市</a></li>
     <li><a href="#">用户论坛</a></li>
   </ul>
   <span>客服热线：400-9677-168</span>
