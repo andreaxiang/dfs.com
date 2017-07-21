@@ -8,7 +8,97 @@
 </head>
 <body>
 <!-- 网站头部 top_box:width:1211px -->
-<div id="site_header"></div>
+<header id="top">
+    <div id="top_box">
+        <ul class="lf">
+            <!--位置定位-->
+            <i class="icon">&#xe604;</i>
+            <a href="#">定位</a>
+            <!--官网首页-->
+            <a href="#">大丰收首页</a>
+        </ul>
+        <!--top列表文字-->
+        <ul class="rt">
+            <li id="welcome">您好，欢迎光临
+                <a href="#" id="btLogin">[登录]</a>
+                <a href="#" id="btSignUp">[免费注册]</a>
+            </li>
+            <li>
+                <b></b><!--分割线条-->
+                <a href="#">我的订单</a>
+            </li>
+            <li class="vip">
+                <b></b><!--分割线条-->
+                <a href="#"><i class="icon">&#xe609;</i>收藏大丰收</a>
+            </li>
+            <li class="bjd">
+                <b></b><!--分割线条-->
+                <a href="#"> <i class="icon">&#xee8f;</i>五谷官网</a>
+            </li>
+            <li class="phone">
+                <b></b><!--分割线条-->
+                <a href="#"> <i class="icon">&#xe6d5;</i>手机APP</a>
+            </li>
+            <li class="service">
+                <b></b><!--分割线条-->
+                <a href="#">商家入口</a>
+                <!--弹出菜单-->
+                <ul class="service_items">
+                    <li>帮助中心</li>
+                    <li>售后服务</li>
+                    <li>在线客服</li>
+                    <li>投诉中心</li>
+                    <li>客服邮箱</li>
+                </ul>
+            </li>
+            <li class="service">
+                <a href="#">网站导航</a>
+                <!--弹出菜单-->
+                <ul class="service_items">
+                    <li>帮助中心</li>
+                    <li>售后服务</li>
+                    <li>在线客服</li>
+                    <li>投诉中心</li>
+                    <li>客服邮箱</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!--LOGO和搜索框! -->
+<div id="top_main" class="clear">
+    <a href="#" class="logo lf">
+        <img src="img/logo1.jpg" alt="LOGO"/>
+    </a>
+
+    <div id="settle_up">
+        <i class="icon">&#xe60a;</i>
+        我的购物车<b></b>
+    </div>
+    <div id="search_box">
+        <div class="search">
+            <input type="text" id="txtSearch" class="text"/>
+            <button>搜索</button>
+        </div>
+        <div class="hot_words">
+            <span>热门搜索：</span> <a href="#">农家土鸡蛋</a> <a href="#">山东樱桃</a> <a href="#">小黄鱼</a>
+            <a href="#">鲍鱼</a> <a href="#">四川山核桃</a> <a href="#">车厘子</a> <a href="#">陕西苹果</a><a href="#">芒果</a>
+        </div>
+    </div>
+</div>
+
+<!--主导航 -->
+<nav id="nav" class="clear">
+    <ul id="nav_items">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">原产地</a></li>
+        <li><a href="#">品牌街</a></li>
+        <li><a href="product-list.html">生鲜超市</a></li>
+        <li><a href="#">用户论坛</a></li>
+    </ul>
+    <span>客服热线：400-9677-168</span>
+</nav>
 
 <div id="main">
   <div class="bread-crumb">
@@ -23,10 +113,10 @@
         <li><a href="#" class="curr">价格</a></li>
         <li><a href="#">上架时间</a></li>
       </ul>
-      <ol>
+      <!--<ol>
         <li><a href="">&lt;</a></li>
         <li><a href="">&gt;</a></li>
-      </ol>
+      </ol>-->
     </header>
     <!-- 产品列表 -->
     <section id="plist">
@@ -47,7 +137,7 @@
                 桃本桃旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -66,7 +156,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -85,7 +175,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -104,7 +194,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -123,7 +213,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -142,7 +232,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -161,7 +251,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
         <li>
@@ -180,7 +270,7 @@
                 送渔郎旗舰店 &gt;
               </a>
             </aside>
-            <a href="#" class="buy_btn">加入购物车</a>
+            <a href="#" class="addcart">加入购物车</a>
           </div>
         </li>
       </ul>
@@ -249,93 +339,86 @@
   </div>
 </div>
 
-
 <!--页面底部! -->
 <div id="site_footer"></div>
 <!--登录注册Tab-->
 <div id="dialog">
-  <!--模态框-->
-  <div id="dialog-overlay"></div>
-  <!--登录注册对话框-->
-  <div id="dialog-box">
-    <div class="wrap">
-      <ul class="tabs clear">
-        <li class="active">登录</li>
-        <li>注册</li>
-      </ul>
-      <ul class="content clear">
-        <li class="active">
-          <form id="logIn-form">
-            <div class="row">
-              <label for="uname">用户名</label>
-              <input type="text" placeholder="用户名不少于6位" name="uname" id="uname"/>
-            </div>
-            <div class="row">
-              <label for="upwd">密&nbsp;&nbsp;&nbsp;码</label>
-              <input type="password" placeholder="密码为6～12位字母数字" name="upwd" id="upwd"/>
-            </div>
-            <div class="row actions">
-              <button type="submit" id="btSubmit">登录</button>
-            </div>
-            <div class="row actions">
-              <a href="#" class="btn-forgotPwd">忘记密码?</a>
-            </div>
-          </form>
-        </li>
-        <li>
-          <form id="signUp-form">
-            <div class="row">
-              <label>用户名</label>
-              <input type="text" placeholder="用户名不少于6位" name="uname"/>
-            </div>
-            <div class="row">
-              <label>邮&nbsp;&nbsp;&nbsp;箱</label>
-              <input type="text" placeholder="邮箱格式为xxx@xxx.xxx" name="umail"/>
-            </div>
-            <div class="row">
-              <label>手&nbsp;&nbsp;&nbsp;机</label>
-              <input type="text" placeholder="请输入11位数手机号码" name="uphone"/>
-            </div>
-            <div class="row">
-              <label>验证码</label>
-              <input type="password" placeholder="验证码请查收手机短信" name="verifyCode"/>
-            </div>
-            <div class="row">
-              <label>密&nbsp;&nbsp;&nbsp;码</label>
-              <input type="password" placeholder="密码为6～12位字母数字" name="upwd"/>
-            </div>
-            <div class="row actions">
-              <button type="submit" id="bt-signup">注册</button>
-            </div>
-          </form>
-        </li>
-      </ul>
+    <!--模态框-->
+    <div id="dialog-overlay"></div>
+    <!--登录注册对话框-->
+    <div id="dialog-box">
+        <div class="wrap">
+            <ul class="tabs clear">
+                <li class="active">登录</li>
+                <li>注册</li>
+            </ul>
+            <ul class="content clear">
+                <li class="active">
+                    <p id="loginMsg"></p>
+                    <form id="login-form">
+                        <div class="row">
+                            <label>用户名</label>
+                            <input type="text" placeholder="请输入登录用户名" name="uname"/>
+                        </div>
+                        <div class="row">
+                            <label>密&nbsp;&nbsp;&nbsp;码</label>
+                            <input type="password" placeholder="请输入登录密码" name="upwd"/>
+                        </div>
+                        <div class="row actions">
+                            <button type="submit" id="bt-login">提交登录</button>
+                        </div>
+                        <div class="row actions">
+                            <a href="#" id="btn-forgotPwd">忘记密码?</a>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form action="" method="GET" id="signup-form">
+                        <div class="row">
+                            <label>用户名</label>
+                            <input type="text" placeholder="用户名不少于6位" name="uname"/>
+                        </div>
+                        <div class="row">
+                            <label>邮&nbsp;&nbsp;&nbsp;箱</label>
+                            <input type="text" placeholder="邮箱格式为xxx@xxx.xxx" name="umail"/>
+                        </div>
+                        <div class="row">
+                            <label>密&nbsp;&nbsp;&nbsp;码</label>
+                            <input type="password" placeholder="密码为6～12位字母数字" name="upwd"/>
+                        </div>
+                        <div class="row actions">
+                            <button type="submit" id="bt-signup">提交注册</button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="wrap resetPwd" style="display: none">
+          <ul class="resetPassword">
+            <li class="forgotPassword" style="display:none;">
+              <h3>重置密码</h3>
+              <form class="signUp">
+                <div class="row">
+                  <label>邮箱</label>
+                  <input type="text" value="uname"/>
+                </div>
+                <div class="row actions">
+                  <button type="submit">发送重置密码邮件</button>
+                </div>
+                <div class="row">
+                  <a href="#">返回登录</a>
+                </div>
+            </li>
+          </ul>
+        </div>-->
     </div>
-    <!--<div class="wrap resetPwd" style="display: none">
-      <ul class="resetPassword">
-        <li class="forgotPassword" style="display:none;">
-          <h3>重置密码</h3>
-          <form class="signUp">
-            <div class="row">
-              <label>邮箱</label>
-              <input type="text" value="uname"/>
-            </div>
-            <div class="row actions">
-              <button type="submit">发送重置密码邮件</button>
-            </div>
-            <div class="row">
-              <a href="#">返回登录</a>
-            </div>
-        </li>
-      </ul>
-    </div>-->
-  </div>
 </div>
 
 <script src="js/jquery-1.11.3.js"></script>
-<script src="js/product-list.js"></script>
 <script src="js/goTop.js"></script>
+<script src="js/product-list.js"></script>
 <script src="js/login-tab.js"></script>
 <script src="js/login-modal.js"></script>
+
 </body>
 </html>

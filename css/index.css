@@ -646,7 +646,7 @@ ul.category-item li.category-rt img {
 .main_showcase>li .mainCol-ct img {
   width:140px;
   height:140px;
-  background-color: #ddd;
+  background-color: #f7f7f7;
   cursor: pointer;
 }
 
@@ -716,11 +716,11 @@ ul.category-item li.category-rt img {
   margin:6px auto;
 }
 
-.buy_btn {
+.prod_cover .addcart {
   display: block;
+  width:100%;
   height: 42px;
   line-height: 42px;
-  width: 100%;
   background: #6ad971;
   z-index: 2;
   font-size: 16px;
@@ -731,7 +731,7 @@ ul.category-item li.category-rt img {
   transition: all .3s ease-in-out;
 }
 
-.buy_btn:hover {
+.prod_cover .addcart:hover {
   border:1px solid #58bb60;
   background:#58bb60;
   color:#fff;
@@ -1340,14 +1340,15 @@ ul.category-item li.category-rt img {
   cursor: pointer;
   background-color:rgba(0,0,0,0.2);
   border:1px solid #fff;
+    z-index: 1000000000;
 }
 .goTop-btn:hover {
   color:#fff;
   background-color:rgba(0,0,0,0.35);
 }
 
-/*** 登录注册 ***/
-/*模态框*/
+/*** 登录 ***/
+/**模态框**/
 #dialog #dialog-overlay {
   width: 100%;
   height: 100%;
@@ -1357,13 +1358,13 @@ ul.category-item li.category-rt img {
   bottom:0;
   left:0;
   right:0;
-  z-index: 3000;
+  z-index: 300000;
   display: none;
 }
 
 #dialog #dialog-box {
   position: absolute;
-  z-index: 5000;
+  z-index: 500000;
   left: 50%;
   top: 50%;
   margin-left:-251px;
@@ -1371,13 +1372,12 @@ ul.category-item li.category-rt img {
   font-size: 14px;
   padding-bottom: 10px;
   width:500px;
-  /*border:1px solid #fff;*/
   background:#fff;
   box-shadow: 0 0 1em hsla(0,0%,0%,0.45);
   display: none;
 }
 
-/** Tab切换 **/
+/** 注册登录Tab **/
 .tabs {
   width:100%;
   margin:0 auto;
