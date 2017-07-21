@@ -716,7 +716,7 @@ ul.category-item li.category-rt img {
   margin:6px auto;
 }
 
-.prod_cover .addcart {
+.addcart {
   display: block;
   width:100%;
   height: 42px;
@@ -731,7 +731,7 @@ ul.category-item li.category-rt img {
   transition: all .3s ease-in-out;
 }
 
-.prod_cover .addcart:hover {
+.addcart:hover {
   border:1px solid #58bb60;
   background:#58bb60;
   color:#fff;

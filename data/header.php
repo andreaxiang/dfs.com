@@ -1,8 +1,6 @@
 <?php
 header('Content-Type: text/html;charset=UTF-8');
 ?>
-
-<!-- 网站头部 top_box:width:1211px -->
 <header id="top">
   <div id="top_box">
     <ul class="lf">
@@ -10,7 +8,7 @@ header('Content-Type: text/html;charset=UTF-8');
       <i class="icon">&#xe604;</i>
       <a href="#">定位</a>
       <!--官网首页-->
-      <a href="#">大丰收首页</a>
+      <a href="index.html">大丰收首页</a>
     </ul>
     <!--top列表文字-->
     <ul class="rt">
@@ -60,6 +58,7 @@ header('Content-Type: text/html;charset=UTF-8');
     </ul>
   </div>
 </header>
+
 <!--LOGO和搜索框! -->
 <div id="top_main" class="clear">
   <a href="#" class="logo lf">
@@ -72,7 +71,7 @@ header('Content-Type: text/html;charset=UTF-8');
   </div>
   <div id="search_box">
     <div class="search">
-      <input id="txtSearch" class="text"/>
+      <input type="text" id="txtSearch" class="text"/>
       <button>搜索</button>
     </div>
     <div class="hot_words">
@@ -81,16 +80,15 @@ header('Content-Type: text/html;charset=UTF-8');
     </div>
   </div>
 </div>
+
 <!--主导航 -->
 <nav id="nav" class="clear">
   <ul id="nav_items">
-    <li><a href="index.html">首页</a></li>
-    <li><a href="#">同城购</a></li>
+    <li class="active"><a href="index.html">首页</a></li>
     <li><a href="#">原产地</a></li>
     <li><a href="#">品牌街</a></li>
-    <li class="active"><a href="#">生鲜超市</a></li>
-    <li><a href="#">兑换中心</a></li>
-    <li><a href="#">农技论坛</a></li>
+    <li><a href="product-list.html">生鲜超市</a></li>
+    <li><a href="#">用户论坛</a></li>
   </ul>
   <span>客服热线：400-9677-168</span>
 </nav>

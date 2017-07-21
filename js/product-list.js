@@ -4,7 +4,7 @@ $(function(){
   $('#site_footer').load('data/footer.php');
 })
 
-/*//点击“登录”按钮，显示出“登录模态框”
+//点击“登录”按钮，显示出“登录模态框”
 let $modal = $("#dialog-overlay"),
     $dialog = $("#dialog-box"),
     $btLogin = $("#btLogin"),
@@ -24,7 +24,7 @@ $modal.onclick = function (e) {
     $dialog.style.display = "none";
 };
 
-/!**功能点2：为登录界面的“提交登录”按钮绑定事件监听**!/
+/**功能点2：为登录界面的“提交登录”按钮绑定事件监听**/
 let loginUname = null;  //全局变量，当前登录的用户名
 let loginUid = null;    //全局变量，当前登录的用户编号
 $('#bt-login').click(function(){
@@ -51,7 +51,7 @@ $('#bt-login').click(function(){
             alert('响应消息有问题！请检查Network！');
         }
     });
-});*/
+});
 
 
 //发起异步GET请求，获取产品列表，重建分页条
@@ -73,7 +73,7 @@ function loadProduct(pno){
           <p><a href="#">${p.pname}</a></p>
           <div class="price_bar">
             <span class="new_price fl"><em>&yen;${p.price}</em></span>
-            <span class="original_price fr">&yen;${p.price}</span>
+            <span class="original_price fr">&yen;${p.price}＋3</span>
           </div>
           <div class="prod_cover">
             <aside class="store_ti">

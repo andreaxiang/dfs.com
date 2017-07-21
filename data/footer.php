@@ -17,9 +17,9 @@ header('Content-Type: text/html;charset=UTF-8');
     <ul>
       <li><b>配送方式</b></li>
       <li><a href="#">上门自提</a></li>
-      <li><a href="#">211限时达</a></li>
-      <li><a href="#">配送服务查询</a></li>
-      <li><a href="#">配送费收取标准</a></li>
+      <li><a href="#">限时送达</a></li>
+      <li><a href="#">配送查询</a></li>
+      <li><a href="#">配送费标准</a></li>
       <li><a href="#">海外配送</a></li>
     </ul>
     <ul>
@@ -35,7 +35,7 @@ header('Content-Type: text/html;charset=UTF-8');
       <li><a href="#">售后政策</a></li>
       <li><a href="#">价格保护</a></li>
       <li><a href="#">退款说明</a></li>
-      <li><a href="#">返修/退换货</a></li>
+      <li><a href="#">返退换货</a></li>
       <li><a href="#">取消订单</a></li>
     </ul>
     <ul>
