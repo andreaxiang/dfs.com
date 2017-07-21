@@ -1,0 +1,331 @@
+.brand-main {
+  width: 100%;
+  margin:0 auto;
+}
+
+.local-shop {
+  max-width: 1211px;
+  margin: 20px auto;
+}
+
+.local-shop:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.local-shop .title {
+  border-left: 4px solid #58bb60;
+  padding-left: 18px;
+}
+
+.local-shop .title h2 {
+  font-size: 30px;
+  color: #58bb60;
+  line-height: 30px
+}
+
+.local-shop .title p {
+  font-size: 12px;
+  color: #333;
+  margin-top: 6px
+}
+
+.local-shop .addr {
+  margin-top: 20px;
+  padding: 7px 20px;
+  border: 1px solid #ddd;
+  background: #f8f8f8
+}
+
+.local-shop .addr .addr-list {
+  position: relative;
+  height: 44px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.local-shop .addr .addr-list li {
+  float: left;
+  margin: 0 22px;
+  height: 44px;
+  line-height: 44px;
+  color: #666;
+  position: relative;
+  cursor: pointer;
+}
+
+.local-shop .addr .addr-list li.active {
+  color: #6ad971;
+}
+
+.local-shop .addr .addr-list li i {
+  display: block;
+  width: 29px;
+  height: 14px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  background: url(../img/sjx1.png) no-repeat;
+}
+
+.local-shop .addr .more_addr {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  color: #6ad971;
+  cursor: pointer;
+  font-size: 14px
+}
+
+.local-shop .addr .more_addr i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: url(../img/sjx1.png) no-repeat;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out
+}
+
+.local-shop .addr .more_addr i.change {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  vertical-align: middle
+}
+
+.local-shop .list {
+  margin-top: 20px;
+  position: relative
+}
+
+.local-shop .list .store-list {
+  float: left;
+  width: 596px;
+  height: 296px;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 8px
+}
+
+.local-shop .list .store-list:nth-child(2n) {
+  margin-right: 0
+}
+
+.local-shop .list .store-list .pic img {
+  width: 596px;
+  height: 296px
+}
+
+.local-shop .list .store-list .store-info {
+  position: absolute;
+  top: 36px;
+  left: 42px;
+  width: 220px;
+  height: 216px;
+  padding: 0 16px;
+  border: 2px solid #fff;
+}
+
+.local-shop .list .store-list .store-info h3 {
+  height: 42px;
+  padding: 15px 0;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.local-shop .list .store-list .store-info h3 .store-title {
+  height: 42px;
+  overflow: hidden;
+}
+
+.local-shop .list .store-list .store-info p {
+  margin-top: 16px
+}
+
+.local-shop .list .store-list .store-info p label {
+  display: inline-block;
+  min-width: 40px;
+  height: 18px;
+  padding:0 5px 2px 5px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  margin: 0 3px 2px 0;
+}
+
+.local-shop .list .store-list .store-info span {
+  display: inline-block;
+  width: 162px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  bottom: 29px
+}
+
+.factory-direct {
+  margin-top: 26px
+}
+
+.factory-direct .title {
+  border-color: #40a5eb
+}
+
+.factory-direct .title h2 {
+  color: #40a5eb
+}
+
+.factory-direct .store-show {
+  margin-top: 20px
+}
+
+.factory-direct .store-show .store-intro {
+  float: left;
+  width: 296px;
+  height: 296px;
+  position: relative;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out
+}
+
+.factory-direct .store-show .store-intro:nth-child(4n) {
+  margin-right: 0
+}
+
+.factory-direct .store-show .store-intro .store-pic img {
+  width: 296px;
+  height: 296px
+}
+
+.factory-direct .store-show .store-intro .store-msg {
+  position: absolute;
+  bottom: 0;
+  width: 270px;
+  height: 40px;
+  padding: 12px 14px 12px 12px;
+  background: #000;
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
+  font-size: 14px
+}
+
+.factory-direct .store-show .store-intro .store-msg h4 {
+  width: 145px;
+  font-weight: 700
+}
+
+.factory-direct .store-show .store-intro .store-msg p {
+  display: none
+}
+
+.factory-direct .store-show .store-intro .store-in {
+  position: absolute;
+  bottom: 13px;
+  right: 14px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  width: 92px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  z-index: 99
+}
+
+.factory-direct .store-show .store-intro .store-in:hover {
+  color: #40a5eb;
+  border-color: #40a5eb
+}
+
+.factory-direct .store-show .store-intro:hover .store-msg {
+  padding: 12px 14px
+}
+
+.factory-direct .store-show .store-intro:hover .store-msg h4 {
+  width: 268px;
+  margin-top: 15px
+}
+
+.factory-direct .store-show .store-intro:hover .store-msg p {
+  display: block;
+  margin-top: 14px;
+  text-align: justify
+}
+
+.brand-wall .title {
+  border-color: #d9ba2b
+}
+
+.brand-wall .title h2 {
+  color: #d9ba2b
+}
+
+.brand-wall .brand-logo {
+  margin-top: 20px
+}
+
+.brand-wall .brand-logo li {
+  float: left;
+  width: 170px;
+  height: 126px;
+  border: 1px solid #ddd;
+  margin: -1px -1px 0 0;
+  text-align: center
+}
+
+.brand-wall .brand-logo li img {
+  width: 108px;
+  height: 108px;
+  margin-top: 9px;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out
+}
+
+.brand-wall .brand-logo li:hover img {
+  -webkit-transform: scale(.5);
+  -ms-transform: scale(.5);
+  transform: scale(.5);
+}
+
+.self-store .title {
+  border-left: 4px solid #5db524
+}
+
+.self-store .title h2 {
+  color: #5db524
+}
+
+.self-store .self-store-box {
+  margin-top: 20px
+}
+
+.self-store .self-store-box .self-show {
+  float: left;
+  width: 596px;
+  margin-left: 8px
+}
+
+.self-store .self-store-box .self-show:nth-of-type(1) {
+  margin-left: 0
+}
+
+.self-store .self-store-box .self-show img {
+  width: 596px;
+  height: 270px
+}
+

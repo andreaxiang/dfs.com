@@ -1,57 +1,8 @@
 /**功能点1：待页面加载完成后，异步请求页头和页尾**/
 $(function(){
-  $('#site_header').load('data/header.php');
+  /*$('#site_header').load('data/header.php');*/
   $('#site_footer').load('data/footer.php');
 })
-
-//点击“登录”按钮，显示出“登录模态框”
-let $modal = $("#dialog-overlay"),
-    $dialog = $("#dialog-box"),
-    $btLogin = $("#btLogin"),
-    $btSubmit = $("#btSubmit");
-
-//点击“登录”按钮，显示出“登录模态框”
-$btLogin.onclick = function (e) {
-    e.preventDefault();
-    $modal.style.display = "block";
-    $dialog.style.display = "block";
-};
-
-//点击模态框本身，隐藏“登录模态框”
-$modal.onclick = function (e) {
-    e.preventDefault();
-    $modal.style.display = "none";
-    $dialog.style.display = "none";
-};
-
-/**功能点2：为登录界面的“提交登录”按钮绑定事件监听**/
-let loginUname = null;  //全局变量，当前登录的用户名
-let loginUid = null;    //全局变量，当前登录的用户编号
-$('#bt-login').click(function(){
-    var n = $('[name="uname"]').val();
-    var p = $('[name="upwd"]').val();
-    //发起异步POST请求，进行登录验证
-    $.ajax({
-        type: 'GET',
-        url: 'data/2_user_login.php',
-        data: {uname: n, upwd: p},
-        success: function(data){
-            //console.log('开始处理响应消息');
-            if(data.code<0){  //登录失败
-                $('p.alert').html(data.msg);
-            }else {           //登录成功
-                $modal.hide();
-                $dialog.hide();
-                $('#welcome').html('欢迎回来：'+data.uname);
-                loginUname = data.uname; //在全局范围保存登录用户名
-                loginUid = data.uid;//在全局范围保存登录用户编号
-            }
-        },
-        error: function(){
-            alert('响应消息有问题！请检查Network！');
-        }
-    });
-});
 
 
 //发起异步GET请求，获取产品列表，重建分页条
