@@ -95,24 +95,36 @@
 <nav id="nav" class="clear">
   <ul id="nav_items">
     <li><a href="index.html">首页</a></li>
-    <li class="active"><a href="best-product.html">原产地</a></li>
-    <li><a href="original-product.html">品牌街</a></li>
-    <li><a href="product-list.html">生鲜超市</a></li>
+    <li class="active"><a href="original.html">原产地</a></li>
+    <li><a href="brand.html">品牌街</a></li>
+    <li><a href="market.html">生鲜超市</a></li>
   </ul>
   <span>客服热线：400-9677-168</span>
 </nav>
 
 <!--banner-->
-<div class="carousel">
+<div class="wrapper">
+  <img src="img/fcsp/banner1.jpg">
+  <img src="img/fcsp/banner2.jpg">
+  <img src="img/fcsp/banner3.jpg">
+  <ul>
+    <li class="currentli"></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <a class="btn arrow_left">&lt;</a>
+  <a class="btn arrow_right">&gt;</a>
+</div>
+<!--<div class="carousel">
   <ul class="img-ct">
     <li data-id="0"><a href="#">
-      <img src="img/img-92.jpg" data-src="img/fcsp/banner1.jpg"></a>
+      <img src="img/fcsp/banner1.jpg" data-src=""></a>
     </li>
     <li data-id="1"><a href="#">
-      <img src="img/img-93.jpg" data-src="img/fcsp/banner2.jpg"></a>
+      <img src="img/fcsp/banner2.jpg" data-src=""></a>
     </li>
     <li data-id="2"><a href="#">
-      <img src="img/img-92.jpg" data-src="img/fcsp/banner3.jpg"></a>
+      <img src="img/fcsp/banner3.jpg" data-src=""></a>
     </li>
   </ul>
   <a class="pre arrow" href="#">&lt;</a>
@@ -122,7 +134,7 @@
     <li class=""></li>
     <li class="active"></li>
   </ul>
-</div>
+</div>-->
 
 <section class="win_box">
   <ul class="win_cut">
@@ -465,10 +477,72 @@
 
 
 <script src="js/jquery-1.11.3.js"></script>
-<script src="js/carousel.js"></script>
+<!--<script src="js/carousel.js"></script>-->
 <script src="js/goTop.js"></script>
 <script src="js/login-tab.js"></script>
 <script src="js/login-modal.js"></script>
+<script>
+
+  var $next = $(".arrow_left"),
+    $pre = $(".arrow_right"),
+    $imgs = $(".wrapper img");
+  var timer;
+  var n = 0;
+  /*用n来记录显示图片的这个数值，第1张为0*/
+
+  /*功能一：箭头控图*/
+  $(".wrapper img").hide().eq(0).show();//只显示第1张图片
+
+  $pre.click(function () {
+    if (n < $imgs.length - 1) {
+      n = n+1;
+      /*小于最后一张图像时在增加*/
+    } else {
+      n = 0;
+      /*回到第1张图片*/
+    }
+    $imgs.fadeOut(500).eq(n).fadeIn(500);
+    /*显示当前数对应的图片*/
+    $(".wrapper li").removeClass("currentli").eq(n).addClass("currentli");
+  })
+
+  $next.click(function () {
+    if (n > 0) {
+      n = n-1;
+      /*图像数大于第1张时减1*/
+    } else {
+      n = $imgs.length - 1;
+    }
+    $imgs.fadeOut(500).eq(n).fadeIn(500);
+    $(".wrapper li").removeClass("currentli").eq(n).addClass("currentli");
+  })
+  /*功能二：圆点控制*/
+  $(".wrapper li").click(function () {
+    n = $(this).index();
+    $imgs.fadeOut(600).eq(n).fadeIn(600);
+    $(".wrapper li").removeClass("currentli").eq(n).addClass("currentli")
+  })
+
+  /*功能三：自动轮播播放*/
+  function autoPlay(){
+    timer = setInterval(function(){
+      if (n < $imgs.length-1) {
+        n = n+1;
+      } else {
+        n = 0;
+      }
+      $imgs.fadeOut(600).eq(n).fadeIn(600);
+      $(".wrapper li").removeClass("currentli").eq(n).addClass("currentli");
+    },2500);
+  }
+  autoPlay();
+
+  /*鼠标悬停时暂停自动轮播 */
+  $(".wrapper img").on("mouseover",function stopAuto() {
+    clearInterval(clock);
+  });
+
+</script>
 
 </body>
 </html>

@@ -10,7 +10,7 @@ for(var i=0; i<cookieArray.length; i++){
   cookieObject[key] = value;
 }
 if(!cookieObject.loginUid){  //没有需要的Cookie数据
-  location.href="product-list.html";
+  location.href="../market.html";
 }
 
 /**功能点2：页面加载完后，异步请求页头和页尾**/
